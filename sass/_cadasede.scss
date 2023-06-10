@@ -75,13 +75,15 @@
         background-color: rgb(58, 56, 58);
         .carousel{
             z-index: 0;
-            height: 40rem;
-            img{
-                max-height: 40rem;
-                object-fit: contain;
-                object-position: center;
-              }
-        }
+            .carousel-inner{
+                height: 40rem;
+                img{
+                    max-height: 40rem;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }      
     }
 
     #servicios{
@@ -92,21 +94,47 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 1rem;
+        p{
+            font-size: 1.5rem;
+            .green{
+                color: rgb(83, 158, 83),
+            }
+            .grey{
+                color:  #6c757d,
+            }
+        }
         .cartitas{
             display: flex;
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
             width: 80%;
-            div{
-                width: 12rem;
-                height: 12rem;
-                border: 1px solid black;
-                margin: 3rem;
-                border-radius: 1rem;
-            }
+
+            $estado-servicio: (
+                deshabilitado: #6c757d,
+                habilitado: rgb(83, 158, 83),
+            );
+            @each $estado, $color in $estado-servicio {
+                .#{$estado} {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 10rem;
+                    height: 10rem;
+                    border: 1px solid black;
+                    margin: 1rem;
+                    border-radius: 1rem; 
+                    background-color: $color;
+                    p{
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
+                }
+              }   
         }
     }
+
 
     #informacion{
         height: auto;
