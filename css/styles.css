@@ -485,14 +485,14 @@
   box-shadow: 3px 3px 3px rgb(95, 64, 94);
 }
 
-main .main-container-beneficios .hola {
+main .main-container-beneficios .titulobeneficios {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20rem;
   background-color: black;
 }
-main .main-container-beneficios .hola p {
+main .main-container-beneficios .titulobeneficios p {
   padding: 3rem;
   font-size: 5rem;
   color: rgb(226, 226, 225);
@@ -541,6 +541,11 @@ main .main-container-beneficios .row .col .div-4 {
   margin: 1rem;
 }
 
+@media screen and (max-width: 1100px) {
+  main .main-container-beneficios .titulobeneficios p {
+    font-size: 3rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;
