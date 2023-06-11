@@ -485,47 +485,58 @@
   box-shadow: 3px 3px 3px rgb(95, 64, 94);
 }
 
-.main-container-beneficios .row {
+main .main-container-beneficios .hola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-color: black;
+}
+main .main-container-beneficios .hola p {
+  padding: 3rem;
+  font-size: 5rem;
+  color: rgb(226, 226, 225);
+  font-weight: bold;
+  text-align: center;
+}
+main .main-container-beneficios .row {
   border: 1px solid black;
-  background-color: green;
   height: auto;
 }
-.main-container-beneficios .row .col {
-  border: 1px solid black;
+main .main-container-beneficios .row .col {
   height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(70, 70, 238);
 }
-.main-container-beneficios .row .col .div-0 {
-  width: 10rem;
+main .main-container-beneficios .row .col .div-0 {
   height: 10rem;
+  width: 10rem;
   background-color: orange;
   margin: 1rem;
 }
-.main-container-beneficios .row .col .div-1 {
-  width: 10rem;
+main .main-container-beneficios .row .col .div-1 {
   height: 10rem;
+  width: 10rem;
   background-color: orange;
   margin: 1rem;
 }
-.main-container-beneficios .row .col .div-2 {
-  width: 10rem;
+main .main-container-beneficios .row .col .div-2 {
   height: 10rem;
+  width: 10rem;
   background-color: orange;
   margin: 1rem;
 }
-.main-container-beneficios .row .col .div-3 {
-  width: 10rem;
+main .main-container-beneficios .row .col .div-3 {
   height: 10rem;
+  width: 10rem;
   background-color: orange;
   margin: 1rem;
 }
-.main-container-beneficios .row .col .div-4 {
-  width: 10rem;
+main .main-container-beneficios .row .col .div-4 {
   height: 10rem;
+  width: 10rem;
   background-color: orange;
   margin: 1rem;
 }
@@ -574,19 +585,19 @@ html .bodycontainer {
     padding-bottom: 1.3rem;
   }
 }
-.boton1 {
+.boton1, .gridcontainer #section2 .botonestandar {
   background-color: yellow;
   border-color: yellow;
   border-radius: 2rem;
   padding-inline: 3rem;
   padding-block: 0.5rem;
 }
-.boton1 a {
+.boton1 a, .gridcontainer #section2 .botonestandar a {
   text-decoration: none;
   font-size: 2rem;
   color: black;
 }
-.boton1:hover {
+.boton1:hover, .gridcontainer #section2 .botonestandar:hover {
   background-color: rgb(241, 241, 91);
 }
 
@@ -699,22 +710,8 @@ html .bodycontainer {
   font-size: 2rem;
 }
 .gridcontainer #section2 .botonestandar {
-  font-size: 2.5rem;
-  border-radius: 2rem;
-  padding-inline: 2rem;
-  border: none;
-  box-shadow: 2px 5px 5px rgba(58, 57, 57, 0.7);
-  border: 1px solid rgb(255, 255, 255);
-}
-.gridcontainer #section2 .botonestandar a {
-  text-decoration: none;
-  color: black;
-}
-.gridcontainer #section2 .botonestandar a:hover {
-  color: rgb(90, 90, 90);
-}
-.gridcontainer #section2 .botonestandar:hover {
-  border: 1px solid rgb(90, 90, 90);
+  background-color: white;
+  border-color: black;
 }
 .gridcontainer #section3 {
   grid-area: section3;
