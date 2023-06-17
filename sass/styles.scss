@@ -335,6 +335,47 @@ html{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .gridcontainer{
+        
+        #section3{
+            flex-direction: column; 
+            .cards{
+                max-width:100%;
+            }  
+        }
+
+        #main1{
+            height: 60rem;
+            padding: 5rem;
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 3rem;
+            }
+        }
+        
+        #section1{
+            height: auto;
+            h2{
+                font-size: 3rem;
+            }
+        }   
+        
+        .secinfo{
+            .info{
+                img{
+                max-width: 100%;
+                }
+            }
+            
+        }   
+    }
+}
+
+
+
 #footer1{
     padding-block: 8rem;
     background-color: rgb(0, 0, 0);

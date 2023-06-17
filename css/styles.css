@@ -131,9 +131,6 @@
 }
 
 @media screen and (max-width: 820px) {
-  .busqueda {
-    font-size: 8rem;
-  }
   .filtrosbusqueda {
     display: flex;
     flex-direction: column;
@@ -148,9 +145,16 @@
     width: 30rem;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .contentcard {
     flex-direction: column;
+  }
+  #bootstraplayout .row1 .busqueda {
+    font-size: 3rem;
+    color: antiquewhite;
+  }
+  #bootstraplayout .row1 .form1 {
+    font-size: 2rem;
   }
 }
 #blayout .sec1 {
@@ -354,18 +358,19 @@
 }
 
 @media screen and (max-width: 600px) {
+  #blayout .opciones a {
+    font-size: 1.8rem;
+  }
   #blayout .sec1 {
     text-align: center;
   }
-}
-@media screen and (max-width: 600px) {
-  #blayout .opciones a {
-    font-size: 1.8rem;
+  #blayout .sec1 .partes h2 {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 400px) {
   #informacion .infosede iframe {
-    width: 20rem;
+    width: 15rem;
   }
 }
 .maininformacion {
@@ -416,7 +421,10 @@
 
 @media screen and (max-width: 600px) {
   .maininformacion h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
+  }
+  .maininformacion p {
+    font-size: 1.5rem;
   }
 }
 .asociateinfo {
@@ -490,7 +498,7 @@ main .main-container-beneficios .titulobeneficios {
   justify-content: center;
   align-items: center;
   height: 20rem;
-  background-color: black;
+  background-image: linear-gradient(to left, black 30%, grey 100%);
 }
 main .main-container-beneficios .titulobeneficios p {
   padding: 3rem;
@@ -544,6 +552,11 @@ main .main-container-beneficios .row .col .div-4 {
 @media screen and (max-width: 1100px) {
   main .main-container-beneficios .titulobeneficios p {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main-container-beneficios .titulobeneficios p {
+    font-size: 1rem;
   }
 }
 * {
@@ -843,6 +856,33 @@ html .bodycontainer {
   }
   .gridcontainer #section1 h2 {
     font-size: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gridcontainer #section3 {
+    flex-direction: column;
+  }
+  .gridcontainer #section3 .cards {
+    max-width: 100%;
+  }
+  .gridcontainer #main1 {
+    height: 60rem;
+    padding: 5rem;
+  }
+  .gridcontainer #main1 h1 {
+    font-size: 2rem;
+  }
+  .gridcontainer #main1 p {
+    font-size: 3rem;
+  }
+  .gridcontainer #section1 {
+    height: auto;
+  }
+  .gridcontainer #section1 h2 {
+    font-size: 3rem;
+  }
+  .gridcontainer .secinfo .info img {
+    max-width: 100%;
   }
 }
 #footer1 {

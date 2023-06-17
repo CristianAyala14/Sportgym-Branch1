@@ -210,21 +210,32 @@
 
 }
 
-@media  screen and (max-width: 600px){
-    #blayout .sec1{
-        
-        text-align: center;
-    }
-}
 
 @media screen and (max-width:600px){
     #blayout .opciones a{
         font-size: 1.8rem;
     }
+    #blayout{
+        .sec1{
+            text-align: center;
+            .partes{
+                h2{
+                    font-size: 1rem;
+    
+                }
+            }
+    
+        }
+
+    }
+   
+ 
+   
+
 }
 
 @media screen and (max-width:400px){
     #informacion .infosede iframe{
-        width: 20rem;
+        width: 15rem;
     }
 }

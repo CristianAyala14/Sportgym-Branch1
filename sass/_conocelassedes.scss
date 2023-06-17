@@ -153,9 +153,7 @@
 }
 
 @media screen and (max-width: 820px){
-    .busqueda{
-        font-size: 8rem;
-    } 
+    
     .filtrosbusqueda{
         display: flex;
         flex-direction: column;
@@ -172,8 +170,25 @@
     } 
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:600px){
     .contentcard{
             flex-direction: column;
     }
+    #bootstraplayout{
+        .row1{
+        
+            .busqueda{
+                font-size: 3rem;
+                color: antiquewhite;
+            }
+            .form1{
+                font-size: 2rem;
+                
+            }
+        }
+
+       
+    }
+   
 }
+
